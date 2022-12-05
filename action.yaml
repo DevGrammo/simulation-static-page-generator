@@ -17,5 +17,8 @@ runs:
       uses: actions/setup-java@v1
       with:
        java-version: 1.11
+    - name: Run chmod to make gradlew executable 
+      run: chmod +x ./gradlew && ./gradlew shadowJar && java -jar build/libs/PageGenerator-1.0-SNAPSHOT-all.jar .
+      shell: bash
     
 
