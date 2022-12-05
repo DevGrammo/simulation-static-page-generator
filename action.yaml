@@ -31,7 +31,7 @@ runs:
       shell: bash
        
     - name: Run chmod to make gradlew executable 
-      run: chmod +x ./gradlew && ./gradlew shadowJar && java -jar build/libs/PageGenerator-1.0-SNAPSHOT-all.jar .
+      run: java -jar build/PageGenerator-1.0-SNAPSHOT-all.jar . && rm -r build
       shell: bash
     
 
