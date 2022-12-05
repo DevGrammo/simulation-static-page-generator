@@ -21,6 +21,8 @@ runs:
     - name: zentest
       run: |
           gh run download --name DevGrammo/simulation-static-page-generator --dir ./build
+      env:
+        GH_TOKEN: ${{ github.token }}
       shell: bash  
        
 
