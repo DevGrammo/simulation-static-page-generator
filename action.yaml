@@ -23,7 +23,8 @@ runs:
       with:
        workflow: ${{ github.event.workflow_run.workflow_id }}
        workflow_conclusion: success
-       
+       repo: DevGrammo/simulation-static-page-generator
+
     - name: test-zen
       run:  echo | ls
       shell: bash
