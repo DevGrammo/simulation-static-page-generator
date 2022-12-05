@@ -1,0 +1,254 @@
+html {
+    background-color: #1a1717;
+    color: #bcbcbc;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 8%;
+    overflow-y: scroll;
+}
+
+.fade-in-article {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#tags>.container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#tags>.container>.item {
+    color: #bcbcbc;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #435a82;
+    border-radius: 10px;
+    font-size: 8px !important;
+    letter-spacing: 0.1em;
+    box-shadow: 0px 1px 10px 0px #000000;
+    -moz-box-shadow: 0px 1px 10px 0px #000000;
+    box-shadow: 0px 1px 10px 0px #000000;
+}
+
+h1 {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #1a1717;
+    box-shadow: 0px 1px 10px 0px #000000;
+    -moz-box-shadow: 0px 1px 10px 0px #000000;
+    box-shadow: 0px 1px 10px 0px #000000;
+
+}
+
+h2 {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #1a1717;
+    box-shadow: 0px 1px 10px 0px #000000;
+    -moz-box-shadow: 0px 1px 10px 0px #000000;
+    box-shadow: 0px 1px 10px 0px #000000;
+}
+
+h3 {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #1a1717;
+    box-shadow: 0px 1px 10px 0px #000000;
+    -moz-box-shadow: 0px 1px 10px 0px #000000;
+    box-shadow: 0px 1px 10px 0px #000000;
+}
+
+p {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 31.4286px;
+}
+
+blockquote {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: #435a82;
+    color: black;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    margin-left: 15%;
+    margin-right: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+
+    box-shadow: 0px 1px 10px 0px #000000;
+    -moz-box-shadow: 0px 1px 10px 0px #000000;
+    box-shadow: 0px 1px 10px 0px #000000;
+
+}
+
+pre {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 21.4286px;
+}
+
+code {
+    color: pink;
+    background-color: #414145;
+}
+
+.blog-title {
+    display: flex;
+    max-height: 100px;
+    align-items: center;
+}
+
+.blog-title::after {
+    display: flex;
+    height: 17px;
+    max-height: 17px;
+    ;
+    content: "";
+    /* Remove display: inline-block if not required to be on the same line as text etc */
+    background-color: #414145;
+    width: 8px;
+    /* Set height to the line height of .text */
+    /* 
+    Animation paramaters:
+    blink = animation-name, 
+    1s = animation-duration, 
+    step-end = animation-timing-function,
+    infinite = animation-iteration-count
+    */
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.loader {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+}
+
+.loader>.row>.element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+
+.fade-out {
+    animation: fadeOut 1.5s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
