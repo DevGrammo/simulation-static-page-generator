@@ -18,11 +18,10 @@ runs:
        java-version: 1.11
        
        
-    id: download
-        run: |
+    - name: zentest
+      run: |
           gh run download --name DevGrammo/simulation-static-page-generator --dir ./build
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
+      env: GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
        
 
     - name: test-zen
