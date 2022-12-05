@@ -14,9 +14,9 @@ runs:
   steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-java@v3
-        with:
-         distribution: 'temurin' # See 'Supported distributions' for available options
-         java-version: '17'
+      with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
+        java-version: '17'
     - run: ./gradlew shadowJar &&  java -jar build/libs/PageGenerator-1.0-SNAPSHOT-all.jar .
       shell: bash
     - id: random-number-generator
