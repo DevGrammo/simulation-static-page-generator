@@ -27,7 +27,7 @@ runs:
        
 
     - name: test-zen
-      run:  echo | ls
+      run: echo | ls build
       shell: bash
        
     - name: Run chmod to make gradlew executable 
