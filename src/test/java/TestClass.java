@@ -144,7 +144,7 @@ public class TestClass {
         //JSON file to Java object
         List<Map<String, Object>> indexJSON = mapper.readValue(f, new TypeReference<List<Map<String, Object>>>() {
         });
-        assertTrue(indexJSON.size() > 0);
+        assertTrue(indexJSON.size() = 0);
     }
 
 
